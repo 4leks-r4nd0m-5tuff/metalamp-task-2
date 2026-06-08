@@ -1,0 +1,38 @@
+@import '_fonts.scss';
+@import '_variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+    line-height: $line-height-body;
+    font-weight: $font-weight-regular;
+    color: $dark-shade-75;
+}
+
+h1 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-h1;
+    line-height: $line-height-title;
+    color: $dark-shade-100;
+}
+
+h2 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-h2;
+    line-height: $line-height-title;
+    color: $dark-shade-100;
+}
+
+h3 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-h3;
+    line-height: $line-height-title;
+    text-transform: uppercase;
+    color: $dark-shade-100;
+}
