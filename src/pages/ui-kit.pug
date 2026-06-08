@@ -20,7 +20,7 @@ html(lang="en")
 
                 each card in colors 
                     .color-card 
-                        .color-card-rectangle(style=`background: var(--${card.color})`)
+                        .color-card__rectangle(class=`color-card__rectangle--${card.color}`)
                         .color-card__info 
                             .color-card__name= card.name 
                             .color-card__hex= card.hex 
