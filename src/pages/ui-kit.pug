@@ -5,37 +5,5 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title UI-kit
     body
-        section.ui-kit-section
-            .ui-kit-colors 
-                - 
-                    const colors = [
-                        {name: 'Dark Shade 100%', color: 'dark-shade-100', hex: '#1F2041'},
-                        {name: 'Dark Shade 75%', color: 'dark-shade-75', hex: '#1F2041'},
-                        {name: 'Dark Shade 50%', color: 'dark-shade-50', hex: '#1F2041'},
-                        {name: 'Dark Shade 25%', color: 'dark-shade-25', hex: '#1F2041'},
-                        {name: 'Dark Shade 5%', color: 'dark-shade-5', hex: '#1F2041'},
-                        {name: 'Purple', color: 'purple', hex: '#BC9CFF'},
-                        {name: 'Green', color: 'green', hex: '#6FCF97'}
-                    ]
-
-                each card in colors 
-                    .color-card 
-                        .color-card__rectangle(class=`color-card__rectangle--${card.color}`)
-                        .color-card__info 
-                            .color-card__name= card.name 
-                            .color-card__hex= card.hex 
-
-            .ui-kit-typography
-                .typography-sample 
-                    .typography-sample__label H1
-                    .typography-sample__text This one is the sub-section or widget title
-                .typography-sample 
-                    .typography-sample__label H2
-                    .typography-sample__text Next one is the item title inside widgets
-                .typography-sample 
-                    .typography-sample__label H3
-                    .typography-sample__text This is a label or CTA text
-                .typography-sample 
-                    .typography-sample__label Body
-                    .typography-sample__text This is the body text which is used for most of the design, like paragraphs, lists, etc.
-
+        include ../blocks/ui-ki-styleguide/ui-kit-styleguide.pug
+        

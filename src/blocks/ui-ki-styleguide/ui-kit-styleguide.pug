@@ -1,0 +1,36 @@
+section.ui-kit-styleguide
+    .ui-kit-styleguide__colors 
+        - 
+            const colors = [
+                {name: 'Dark Shade 100%', color: 'dark-shade-100', hex: '#1F2041'},
+                {name: 'Dark Shade 75%', color: 'dark-shade-75', hex: '#1F2041'},
+                {name: 'Dark Shade 50%', color: 'dark-shade-50', hex: '#1F2041'},
+                {name: 'Dark Shade 25%', color: 'dark-shade-25', hex: '#1F2041'},
+                {name: 'Dark Shade 5%', color: 'dark-shade-5', hex: '#1F2041'},
+                {name: 'Purple', color: 'purple', hex: '#BC9CFF'},
+                {name: 'Green', color: 'green', hex: '#6FCF97'}
+            ]
+
+        each card in colors 
+            .ui-kit-styleguide__color-sample 
+                .ui-kit-styleguide__color-box(class=`ui-kit-styleguide__color-box--${card.color}`)
+                .ui-kit-styleguide__color-info 
+                    .ui-kit-styleguide__color-name= card.name 
+                    .ui-kit-styleguide__color-hex= card.hex 
+
+    .ui-kit-styleguide__typography
+        .ui-kit-styleguide__typography-sample 
+            .ui-kit-styleguide__typography-label H1
+            .ui-kit-styleguide__typography-text This one is the sub-section or widget title
+
+        .ui-kit-styleguide__typography-sample 
+            .ui-kit-styleguide__typography-label H2
+            .ui-kit-styleguide__typography-text Next one is the item title inside widgets
+
+        .ui-kit-styleguide__typography-sample 
+            .ui-kit-styleguide__typography-label H3
+            .ui-kit-styleguide__typography-text This is a label or CTA text
+            
+        .ui-kit-styleguide__typography-sample 
+            .ui-kit-styleguide__typography-label Body
+            .ui-kit-styleguide__typography-text This is the body text which is used for most of the design, like paragraphs, lists, etc.
