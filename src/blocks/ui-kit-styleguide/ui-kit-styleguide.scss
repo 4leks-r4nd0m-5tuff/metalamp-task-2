@@ -1,3 +1,102 @@
+@import "../../styles/variables";
+
 .ui-kit-styleguide {
+    max-width: calc(#{$content-max-width} - 250px);
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 145px;
+    padding-bottom: 145px;
+}
+
+@media (max-width: 800px) {
+    .ui-kit-styleguide {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.ui-kit-styleguide__colors {
+    width: 281px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ui-kit-styleguide__color-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+}
+
+.ui-kit-styleguide__color-box--dark-shade-100 {
+    background-color: $dark-shade-100;
+}
+
+.ui-kit-styleguide__color-box--dark-shade-75 {
+    background-color: $dark-shade-75;
+}
+
+.ui-kit-styleguide__color-box--dark-shade-50 {
+    background-color: $dark-shade-50;
+}
+
+.ui-kit-styleguide__color-box--dark-shade-25 {
+    background-color: $dark-shade-25;
+}
+
+.ui-kit-styleguide__color-box--dark-shade-5 {
+    background-color: $dark-shade-5;
+}
+
+.ui-kit-styleguide__color-box--purple {
+    background-color: $purple;
+}
+
+.ui-kit-styleguide__color-box--green {
+    background-color: $green;
+}
+
+.ui-kit-styleguide__color-sample {
+    display: flex;
+    gap: 40px;
+}
+
+.ui-kit-styleguide__color-info {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ui-kit-styleguide__color-name {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-h2;
+    line-height: 1.46;
+    color: $dark-shade-100;
+}
+
+.ui-kit-styleguide__color-hex {
+    font-size: $font-size-h2;
+    color: $dark-shade-100;
+    line-height: 1.46;
+}
+
+.ui-kit-styleguide__typography {
+    display: flex;
+    flex-direction: column;
+    width: 436px;
+    color: $dark-shade-100;
+    gap: 30px;
+}
+
+.ui-kit-styleguide__typography-sample {
+    display: flex;
+    gap: 30px;
+}
+
+.ui-kit-styleguide__typography-label {
+    font-size: $font-size-h2;
+    line-height: 1;
 }
