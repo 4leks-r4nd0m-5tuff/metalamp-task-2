@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/main";
 
 .ui-kit-styleguide {
     max-width: calc(#{$content-max-width} - 250px);
@@ -88,15 +89,17 @@
     flex-direction: column;
     width: 436px;
     color: $dark-shade-100;
-    gap: 30px;
+    gap: 51px;
 }
 
 .ui-kit-styleguide__typography-sample {
-    display: flex;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 37px 370px;
+    grid-column-gap: 30px;
 }
 
 .ui-kit-styleguide__typography-label {
-    font-size: $font-size-h2;
-    line-height: 1;
+    color: $dark-shade-25;
+    text-align: right;
+    font-weight: $font-weight-regular;
 }
